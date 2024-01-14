@@ -1,9 +1,19 @@
 /* work sans font */
 
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
+/* shared styles */
 *{
   font-family: 'Work Sans', sans-serif;
+}
+.button-primary{
+  border-radius: 8px;
+background: #FF900E;
+padding: 20px 35px;
+border: none;
+color: #FFF;
+font-size: 20px;
+font-weight: 600;
+cursor: pointer;
 }
 /* header styles */
 header{
@@ -55,3 +65,30 @@ font-size: 16px;
 font-weight: 400;
 
 }
+.banner img{
+    width: 100%;
+}
+
+  /* respomsive media incuris */
+
+/* for mobile devices */
+  @media screen and (max-width:576px) {
+    header{
+      padding:20px;
+    }
+    nav{
+      flex-direction: column;
+    }
+  }
+
+  /* tablet or medium devices */
+  @media screen and (min-width:576px) and (max-width:960px)
+   {
+    nav{
+      flex-direction: column;
+      
+    }
+    header{
+      padding:20px;
+    }
+  }
